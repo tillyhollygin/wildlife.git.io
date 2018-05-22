@@ -1,0 +1,2388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0040)https://freesound.org/search/?q=crickets -->
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <meta name="description" content="Freesound: collaborative database of creative-commons licensed sound for musicians and sound lovers. Have you freed your sound today?">
+        <meta name="keywords" content="free, sound">
+        <link rel="stylesheet" type="text/css" href="./crickets_files/all.css">
+        <!--[if IE 6]><link rel="stylesheet" type="text/css" href="/media/css/ie6.css?v=1404" /><![endif]-->
+        <link rel="icon" href="https://freesound.org/favicon.ico">
+        <title>Freesound - sound search</title>
+        <script type="text/javascript" async="" src="./crickets_files/ga.js.download"></script><script src="./crickets_files/jquery-1.5.2.min.js.download" type="text/javascript"></script>
+        <script src="./crickets_files/jquery-ui-1.8.11.custom.min.js.download" type="text/javascript"></script>
+        <script src="./crickets_files/jquery.cookie.js.download" type="text/javascript"></script>
+        <script src="./crickets_files/swfobject.js.download" type="text/javascript"></script>
+        <script src="./crickets_files/jquery.watermarkinput.js.download" type="text/javascript"></script>
+        <script type="text/javascript">
+            var isLoggedIn = true;
+            var loginUrl = "/home/login/?next=/search/";
+            $(document).ready(function() {
+                 $("#search input[name=q]").Watermark("search sounds");
+            });
+            function clearWatermark(){
+			   $.Watermark.HideAll()
+			   return true
+			}
+        </script>
+        <script src="./crickets_files/freesound.js.download" type="text/javascript"></script>
+        <script src="./crickets_files/maps.js.download" type="text/javascript"></script>
+
+    	<script src="./crickets_files/ajax_utils.js.download" type="text/javascript"></script>
+        <!-- next couple of lines are used for the HTML player -->
+        <link href="./crickets_files/css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="./crickets_files/player.css">
+        <script src="./crickets_files/soundmanager2.js.download"></script>
+        <script type="text/javascript" src="./crickets_files/player.js.download"></script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-86270-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+        
+    </head>
+
+    <body id="" onload="" onunload="">
+
+        
+
+
+        <div id="header">
+            <div id="account_nav">
+                
+                    
+                    <a href="https://freesound.org/people/ziffet/"><div id="account_user"><img src="./crickets_files/user_icon.png" alt="user icon">ziffet</div></a>
+                    <a href="https://freesound.org/home/messages/">Messages</a><div class="messages_count" id="message_indicator_0"><div>0</div></div>
+                    
+                    
+                    <a href="https://freesound.org/home/edit/">Settings</a>
+                    <a href="https://freesound.org/home/logout/?next=/">Log Out</a>
+                    
+                
+            <a href="https://freesound.org/home/upload/" id="upload_button"></a>
+        </div>
+
+        <a href="https://freesound.org/" id="logo"></a>
+
+        <div id="search">
+        <form method="get" onsubmit="return clearWatermark()" action="https://freesound.org/search/">
+            <fieldset>
+               <input type="text" name="q" value="" size="30" style="color: rgb(170, 170, 170);">
+               <input type="submit" value="" id="search_submit">
+            </fieldset>
+        </form>
+        </div>
+
+        <ul id="site_nav">
+            
+            <li class=""><a href="https://freesound.org/home/" id="site_nav_home"><span class="site_nav_icon"></span>Home</a></li>
+            
+            <li class="active_tab"><a href="https://freesound.org/browse/" id="site_nav_sounds"><span class="site_nav_icon"></span>Sounds</a></li>
+            <li class=""><a href="https://freesound.org/forum/" id="site_nav_forums"><span class="site_nav_icon"></span>Forums</a></li>
+            <li class=""><a href="https://freesound.org/people/" id="site_nav_people"><span class="site_nav_icon"></span>People</a></li>
+            <li class=""><a href="https://freesound.org/help/faq/" id="site_nav_help"><span class="site_nav_icon"></span>Help</a></li>
+
+        </ul>
+    </div>
+
+        <div id="wrapper">
+        <div id="container">
+
+        
+
+        
+<div id="content_full"> <!-- START of Content area -->
+
+
+<form id="search_form" method="get" onsubmit="return addAdvancedSearchOptionsFilters()" action="https://freesound.org/search/">
+    <fieldset>
+
+       <input id="query_input" type="text" name="q" value="crickets" size="30">
+       <input id="filter_query" type="hidden" name="f" value="" size="30">
+       
+       <select name="s">
+            
+            <option value="score desc" selected="selected">Automatic by relevance</option>
+            
+            <option value="duration desc">Duration (long first)</option>
+            
+            <option value="duration asc">Duration (short first)</option>
+            
+            <option value="created desc">Date added (newest first)</option>
+            
+            <option value="created asc">Date added (oldest first)</option>
+            
+            <option value="num_downloads desc">Downloads (most first)</option>
+            
+            <option value="num_downloads asc">Downloads (least first)</option>
+            
+            <option value="avg_rating desc">Rating (highest first)</option>
+            
+            <option value="avg_rating asc">Rating (lowest first)</option>
+            
+       </select>
+
+       <input type="submit" value="search" id="search_submit">
+
+       <script type="text/javascript">
+
+    function showAdvancedSearchOptions()
+    {
+        $("#advanced_search_hidden").val(1);
+        $("#enableShowButton").hide();
+        $("#advanced_search_options").show('blind', {}, 500, function() {});
+
+    }
+
+    function hideAdvancedSearchOptions()
+    {
+        $("#advanced_search_hidden").val(0);
+        $("#advanced_search_options").hide('blind', {}, 500, function() {});
+        $("#enableShowButton").show();
+    }
+
+    function set_hidden_grouping_value(){
+        if ($("#grouping_geotagged").is(':checked')){
+            $("#grouping_geotagged_hidden").val("1")
+        }else{
+            $("#grouping_geotagged_hidden").val("")
+        }
+    }
+
+</script>
+
+
+<div id="advanced_search_options" class="advanced_search_options" style="display:none">
+<input id="advanced_search_hidden" type="hidden" name="advanced" value="0">
+
+<div style="margin-top:8px;"></div>Search in:&nbsp;
+<input type="checkbox" name="a_tag" value="1"> Tags&nbsp;&nbsp;
+<input type="checkbox" name="a_filename" value="1"> File names&nbsp;&nbsp;
+<input type="checkbox" name="a_description" value="1"> Descriptions&nbsp;&nbsp;
+<input type="checkbox" name="a_packname" value="1"> Pack names&nbsp;&nbsp;
+<input type="checkbox" name="a_soundid" value="1"> Sound Ids&nbsp;&nbsp;
+<input type="checkbox" name="a_username" value="1"> User names
+<span class="advanced_search_indication">(if none is selected, all will be used)</span>
+<br>
+
+Duration between <input class="inputtext" id="filter_duration_min" value="0" size="6"> (min)
+and <input class="inputtext" id="filter_duration_max" value="*" size="6"> (max) seconds<br>
+<input id="filter_is_geotagged" type="checkbox" value="1"> Only geotagged sounds<br>
+<input id="grouping_geotagged" type="checkbox" onchange="set_hidden_grouping_value()" checked=""> Group sounds by pack
+<input id="grouping_geotagged_hidden" type="hidden" name="g" value="1">
+
+<br>
+<span class="advanced_search_options_button"><a style="cursor:pointer;" onclick="hideAdvancedSearchOptions();">Hide advanced search options</a></span>
+</div>
+
+<span id="enableShowButton" class="advanced_search_options_button">
+    <div style="margin-top:4px;"></div>
+    <a style="cursor:pointer;" onclick="showAdvancedSearchOptions();">Show advanced search options</a>
+</span>
+
+
+        <br>
+
+    </fieldset>
+</form>
+
+
+<p id="filter_query_display">
+
+
+
+</p>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // Fill advanced search fields that were passen on the f parameter
+        // Duration
+
+        if (getFilterValue("duration","min") == "")
+            $("#filter_duration_min").val("0");
+        else
+            $("#filter_duration_min").val(getFilterValue("duration","min"));
+
+        if (getFilterValue("duration","max") == "")
+            $("#filter_duration_max").val("*");
+        else
+            $("#filter_duration_max").val(getFilterValue("duration","max"));
+
+        // Geotagged
+        if (getFilterValue("is_geotagged")==1)
+               $("#filter_is_geotagged").attr('checked','checked')
+
+        // Extract terms from the query search box and highlight any of their occurrences in the descriptions
+        terms = document.getElementById("query_input").value.split(" ");
+
+        for(var i=0;i<terms.length;i++)
+        {
+        	term = terms[i];
+        	re = RegExp(term,"i"); // i for case-insensative
+
+        	descriptions = document.getElementsByClassName("description");
+        	for (var j=0;j<descriptions.length;j++)
+        	{
+        		descriptions[j].innerHTML = descriptions[j].innerHTML.replace(re,"<b>"+term+"</b>");
+        	}
+        }
+
+    });
+
+    function addAdvancedSearchOptionsFilters()
+    {
+
+        // Remove existing previously existing advanced options filters (will be replaced by current ones)
+        existing_duration_filter = "duration:[" + getFilterValue("duration","min") + " TO " + getFilterValue("duration","max") + "]"
+        removeFilter(existing_duration_filter)
+        removeFilter("is_geotagged:1")
+
+        // if advanced options is activated add all updated filters
+        if ($("#advanced_search_hidden").val() == 1)
+        {
+
+            // Create and add new filter with all the advanced options
+            filter = ""
+
+            // Duration filter
+            duration_min = parseFloat($("#filter_duration_min").val())
+            duration_max = parseFloat($("#filter_duration_max").val())
+
+            if ((duration_min >= 0.0) || (duration_max >= 0.0))
+            {
+                duration_filter = ""
+
+                if ((duration_min >= 0.0) && (duration_max >= 0.0)) // Both min and max have been set
+                {
+                    if (duration_max < duration_min)
+                    {
+                        // interchange values if duration_min > duration_max
+                        duration_aux = duration_min
+                        duration_min = duration_max
+                        duration_max = duration_aux
+                    }
+
+                    duration_filter = "duration:[" + duration_min + " TO " + duration_max + "]"
+
+                }
+                else if (duration_min >= 0.0) // Only minimum has been set
+                {
+                    duration_filter = "duration:[" + duration_min + " TO *]"
+                }
+                else if (duration_max >= 0.0) // Only maximum has been set
+                {
+                    duration_filter = "duration:[* TO " + duration_max + "]"
+                }
+
+                filter = filter + duration_filter
+            }
+
+            // Is geotagged filter
+            if ($("#filter_is_geotagged").attr('checked')){
+                if (filter != "")
+                    filter = filter + " "
+                filter = filter + "is_geotagged:1"
+            }
+
+               // Update general filter with the advanced options filter
+            value = $("#filter_query").val();
+            if (value != "")
+                $("#filter_query").val(value + " " + filter);
+            else
+                $("#filter_query").val(filter);
+
+        }
+
+        return true
+    }
+
+    // Return the value of a filter given its name
+    // If filter has a range, optional "range" parameter must be set to "min or "max"
+    function getFilterValue(name, range)
+    {
+        if (!range) { range = "min"};
+
+        var value = $("#filter_query").val();
+        position_name = value.search(name)
+        position_value = value.search(name) + (name + ":").length
+        if (value.search((name + ":")) != -1)
+        {
+            if (value[position_value] == "[") // Is range (with spaces)
+            {
+                aux_value = value.substring(position_value + 1)
+                position_end = position_value + aux_value.search("]") + 2
+
+                range_string = value.substring(position_value + 1, position_end -1) // Without [ ]
+                parts = range_string.split(" ")
+                if (range == "min")
+                    return parts[0]
+                else if (range == "max")
+                    return parts[2]
+            }
+            else if (value[position_value] == "\"") // Is string (with spaces)
+            {
+                aux_value = value.substring(position_value + 1)
+                position_end = position_value + aux_value.search("\"") + 2
+                return value.substring(position_value, position_end)
+
+            }
+            else // Is number or normal text (without spaces)
+            {
+                aux_value = value.substring(position_value + 1)
+                if (aux_value.search(" ") != -1)
+                    position_end = position_value + aux_value.search(" ") + 1
+                else
+                    position_end = value.length
+
+                return value.substring(position_value, position_end)
+            }
+        }
+        else
+        {
+            return ""
+        }
+    }
+
+    // Remove a filter given the full tag ex: type:aiff, pack:"pack name"
+    function removeFilter(tag)
+    {
+        var value = $("#filter_query").val();
+        var cleaned = $.trim(value.replace(tag + " ", "").replace(tag, ""));
+        $("#filter_query").val(cleaned);
+    }
+
+</script>
+
+
+    
+    <div id="sidebar" style="float:right">
+        
+            <h3>licenses</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20license:%22Attribution%22">Attribution</a> (737)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20license:%22Attribution+Noncommercial%22">Attribution Noncommercial</a> (262)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20license:%22Creative+Commons+0%22">Creative Commons 0</a> (671)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20license:%22Sampling%2B%22">Sampling+</a> (34)</li>
+</ul>
+
+
+
+        
+
+        
+            <h3>tags</h3>
+            
+
+<p class="search-tagcloud">
+    <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22ambiance%22">ambiance</a></span> <span class="facet_item" style="font-size:1.66296296296em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22ambience%22">ambience</a></span> <span class="facet_item" style="font-size:1.51851851852em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22ambient%22">ambient</a></span> <span class="facet_item" style="font-size:1.42222222222em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22atmosphere%22">atmosphere</a></span> <span class="facet_item" style="font-size:1.61481481481em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22birds%22">birds</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22bugs%22">bugs</a></span> <span class="facet_item" style="font-size:0.748148148148em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22car%22">car</a></span> <span class="facet_item" style="font-size:0.844444444444em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22cars%22">cars</a></span> <span class="facet_item" style="font-size:1.18148148148em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22chirp%22">chirp</a></span> <span class="facet_item" style="font-size:1.27777777778em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22cicadas%22">cicadas</a></span> <span class="facet_item" style="font-size:1.75925925926em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22cricket%22">cricket</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22crickets%22">crickets</a></span> <span class="facet_item" style="font-size:1.03703703704em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22evening%22">evening</a></span> <span class="facet_item" style="font-size:0.796296296296em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22field%22">field</a></span> <span class="facet_item" style="font-size:1.95185185185em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22field-recording%22">field-recording</a></span> <span class="facet_item" style="font-size:1.37407407407em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22forest%22">forest</a></span> <span class="facet_item" style="font-size:1.32592592593em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22frogs%22">frogs</a></span> <span class="facet_item" style="font-size:1.47037037037em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22insect%22">insect</a></span> <span class="facet_item" style="font-size:1.80740740741em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22insects%22">insects</a></span> <span class="facet_item" style="font-size:1.08518518519em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22jungle%22">jungle</a></span> <span class="facet_item" style="font-size:1.9037037037em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22nature%22">nature</a></span> <span class="facet_item" style="font-size:1.85555555556em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22night%22">night</a></span> <span class="facet_item" style="font-size:0.892592592593em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22outdoors%22">outdoors</a></span> <span class="facet_item" style="font-size:0.940740740741em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22soundscape%22">soundscape</a></span> <span class="facet_item" style="font-size:0.748148148148em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22spring%22">spring</a></span> <span class="facet_item" style="font-size:1.71111111111em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22summer%22">summer</a></span> <span class="facet_item" style="font-size:0.7em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22thailand%22">thailand</a></span> <span class="facet_item" style="font-size:0.844444444444em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22traffic%22">traffic</a></span> <span class="facet_item" style="font-size:0.988888888889em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22water%22">water</a></span> <span class="facet_item" style="font-size:1.22962962963em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20tag:%22wind%22">wind</a></span> 
+</p>
+
+
+        
+
+        
+            <h3>type</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20type:%22aiff%22">aiff</a> (111)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20type:%22flac%22">flac</a> (172)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20type:%22m4a%22">m4a</a> (5)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20type:%22mp3%22">mp3</a> (159)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20type:%22ogg%22">ogg</a> (10)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20type:%22wav%22">wav</a> (1247)</li>
+</ul>
+
+
+
+        
+
+        
+            <h3>samplerate</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20samplerate:%2211025%22">11025</a> (4)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20samplerate:%2244100%22">44100</a> (904)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20samplerate:%2248000%22">48000</a> (625)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20samplerate:%2288200%22">88200</a> (6)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20samplerate:%2296000%22">96000</a> (149)</li>
+</ul>
+
+
+
+        
+
+        
+            <h3>bitdepth</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitdepth:%2216%22">16</a> (841)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitdepth:%2224%22">24</a> (640)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitdepth:%2232%22">32</a> (49)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitdepth:%228%22">8</a> (2)</li>
+</ul>
+
+
+
+        
+
+        
+            <h3>bitrate</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitrate:%221378%22">1378</a> (372)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitrate:%221411%22">1411</a> (234)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitrate:%221500%22">1500</a> (105)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitrate:%222067%22">2067</a> (83)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20bitrate:%222250%22">2250</a> (267)</li>
+</ul>
+
+
+
+        
+
+
+        
+            <h3>channels</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20channels:%221%22">1</a> (160)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20channels:%222%22">2</a> (1542)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20channels:%223%22">3</a> (1)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20channels:%226%22">6</a> (1)</li>
+</ul>
+
+
+
+        
+
+        
+            <h3>packs</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%2211175_Thailand%22">Thailand</a> (43)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%221260_summer%22">summer</a> (22)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%2216929_binaural+vs+stereo120deg+side-by-side%22">binaural vs stereo120deg side-by-side</a> (18)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%2218002_rmcrickets%22">rmcrickets</a> (12)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%2219569_Chiang+Rai+Mountains%22">Chiang Rai Mountains</a> (14)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%2220158_Field+Recordings+-+Japan%22">Field Recordings - Japan</a> (29)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%2221116_Venezuela%22">Venezuela</a> (14)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%2222995_Uganda%22">Uganda</a> (12)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%223606_Fireworks%3A+July+4%2C+2008%22">Fireworks: July 4, 2008</a> (25)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20grouping_pack:%22926_1982+Z28+Camaro%22">1982 Z28 Camaro</a> (20)</li>
+</ul>
+
+
+
+        
+
+        
+            <h3>users</h3>
+            
+
+<p class="search-tagcloud">
+    <span class="facet_item" style="font-size:1.00588235294em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22aguasonic%22">aguasonic</a></span> <span class="facet_item" style="font-size:1.08235294118em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22alienistcog%22">alienistcog</a></span> <span class="facet_item" style="font-size:0.929411764706em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22arnaud+coutancier%22">arnaud coutancier</a></span> <span class="facet_item" style="font-size:1.38823529412em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22ayamahambho%22">ayamahambho</a></span> <span class="facet_item" style="font-size:1.69411764706em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22blaukreuz%22">blaukreuz</a></span> <span class="facet_item" style="font-size:0.7em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22bulbastre%22">bulbastre</a></span> <span class="facet_item" style="font-size:0.852941176471em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22cognito+perceptu%22">cognito perceptu</a></span> <span class="facet_item" style="font-size:1.08235294118em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22csengeri%22">csengeri</a></span> <span class="facet_item" style="font-size:1.31176470588em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22digifishmusic%22">digifishmusic</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22dobroide%22">dobroide</a></span> <span class="facet_item" style="font-size:1.84705882353em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22felix.blume%22">felix.blume</a></span> <span class="facet_item" style="font-size:0.929411764706em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22harryscary%22">harryscary</a></span> <span class="facet_item" style="font-size:0.929411764706em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22inchadney%22">inchadney</a></span> <span class="facet_item" style="font-size:1.15882352941em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22joedeshon%22">joedeshon</a></span> <span class="facet_item" style="font-size:1.31176470588em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22kangaroovindaloo%22">kangaroovindaloo</a></span> <span class="facet_item" style="font-size:1.08235294118em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22klankbeeld%22">klankbeeld</a></span> <span class="facet_item" style="font-size:1.54117647059em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22kvgarlic%22">kvgarlic</a></span> <span class="facet_item" style="font-size:1.92352941176em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22kyles%22">kyles</a></span> <span class="facet_item" style="font-size:0.929411764706em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22le_abbaye_noirlac%22">le_abbaye_noirlac</a></span> <span class="facet_item" style="font-size:1.15882352941em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22lg%22">lg</a></span> <span class="facet_item" style="font-size:0.929411764706em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22miastodzwiekow%22">miastodzwiekow</a></span> <span class="facet_item" style="font-size:1.38823529412em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22mitchellsounds%22">mitchellsounds</a></span> <span class="facet_item" style="font-size:0.929411764706em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22mmiron%22">mmiron</a></span> <span class="facet_item" style="font-size:1.00588235294em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22mnb%22">mnb</a></span> <span class="facet_item" style="font-size:0.776470588235em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22nonoo%22">nonoo</a></span> <span class="facet_item" style="font-size:1.23529411765em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22rfhache%22">rfhache</a></span> <span class="facet_item" style="font-size:1.77058823529em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22rutgermuller%22">rutgermuller</a></span> <span class="facet_item" style="font-size:0.852941176471em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22soundatic%22">soundatic</a></span> <span class="facet_item" style="font-size:1.61764705882em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22syna-max%22">syna-max</a></span> <span class="facet_item" style="font-size:1.46470588235em"><a href="https://freesound.org/search/?g=1&amp;q=crickets&amp;f=%20username:%22weebrian%22">weebrian</a></span> 
+</p>
+
+
+        
+
+    </div>
+
+        
+            <div class="search_paginator">
+                <ul class="pagination"><li class="disabled-previous-next">previous</li><li class="next-page"><a href="https://freesound.org/search/?q=crickets&amp;page=2#sound" title="Next Page">next</a></li><li class="current-page">1</li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=2#sound" title="Page 2">2</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=3#sound" title="Page 3">3</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=4#sound" title="Page 4">4</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=5#sound" title="Page 5">5</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=6#sound" title="Page 6">6</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=7#sound" title="Page 7">7</a></li><li class="dots">...</li><li class="last-page"><a href="https://freesound.org/search/?q=crickets&amp;page=73#sound" title="Last Page">73</a></li><p class="number_of_results">
+            
+                &nbsp;|&nbsp; 1704 sounds
+            
+        </p></ul>
+
+
+            </div>
+
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="352514">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/352/352514_5121236-lq.mp3" title="mp3 file">Ambience, Night Wildlife, A.wav - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/352/352514_5121236-lq.ogg" title="ogg file">Ambience, Night Wildlife, A.wav - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/352/352514_5121236_wave_M.png" title="waveform file">Ambience, Night Wildlife, A.wav - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/352/352514_5121236_spec_M.jpg" title="spectrogram file">Ambience, Night Wildlife, A.wav - spectrogram</a>
+<span class="duration" title="duration in seconds">61079.4</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/352/352514_5121236_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-01:01</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/InspectorJ/sounds/352514/" title="Ambience, Night Wildlife, A.wav">Ambience, Night Wildlife...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:90%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/InspectorJ/sounds/352514/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/InspectorJ/sounds/352514/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/InspectorJ/sounds/352514/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/InspectorJ/sounds/352514/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/InspectorJ/sounds/352514/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">A minute of raw audio of night wildlife in Callahan, Florida. <b>crickets</b> more or less dominate the ambience. If any ...</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Cricket/">Cricket</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/wildlife/">wildlife</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/nature/">nature</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/insects/">insects</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambiance/">ambiance</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Night/">Night</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Nature/">Nature</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Ambiance/">Ambiance</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/cricket/">cricket</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Ambience/">Ambience</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Life/">Life</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambience/">ambience</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Crickets/">Crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Insects/">Insects</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/life/">life</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Wildlife/">Wildlife</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_352514" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/InspectorJ/">InspectorJ</a><br>
+        <span class="date">August 22nd, 2016</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/InspectorJ/sounds/352514/downloaders/">18494 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/InspectorJ/sounds/352514/#comments">47 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(352514)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/InspectorJ/sounds/352514/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            
+            
+            <a class="geotag" href="https://freesound.org/people/InspectorJ/sounds/352514/geotag/">
+                <img src="./crickets_files/geotag.png" width="16" height="16" alt="Geotagged" title="This sound has a geotag">
+            </a>
+            
+            <!-- license icons -->
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/by.png" width="16" height="16" alt="Creative Commons Attribution license" title="This sound is licensed under the Creative Commons Attribution license.">
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="129339">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/129/129339_2355772-lq.mp3" title="mp3 file">Cricket 4.aif - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/129/129339_2355772-lq.ogg" title="ogg file">Cricket 4.aif - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/129/129339_2355772_wave_M.png" title="waveform file">Cricket 4.aif - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/129/129339_2355772_spec_M.jpg" title="spectrogram file">Cricket 4.aif - spectrogram</a>
+<span class="duration" title="duration in seconds">75234.9</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/129/129339_2355772_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-01:15</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/" title="Cricket 4.aif">Cricket 4.aif</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:88%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description"><b>crickets</b> and birds in general ambience alonside the Cher river between le abbaye Noirlac and Bruere Allichamps in France Recording ...</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/Ambience/">Ambience</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Crickets/">Crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Birds/">Birds</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Field-Recording/">Field-Recording</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Bruere-Allichamps/">Bruere-Allichamps</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/France/">France</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Cher-River/">Cher-River</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_129339" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/le_abbaye_Noirlac/">le_abbaye_Noirlac</a><br>
+        <span class="date">September 25th, 2011</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/downloaders/">2050 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/#comments">3 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(129339)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/le_abbaye_Noirlac/packs/8097/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: Crickets">
+            </a>
+            
+            
+            
+            <a class="geotag" href="https://freesound.org/people/le_abbaye_Noirlac/sounds/129339/geotag/">
+                <img src="./crickets_files/geotag.png" width="16" height="16" alt="Geotagged" title="This sound has a geotag">
+            </a>
+            
+            <!-- license icons -->
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/by.png" width="16" height="16" alt="Creative Commons Attribution license" title="This sound is licensed under the Creative Commons Attribution license.">
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%228097_Crickets%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">6 more results</a> in the same pack "Crickets"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="125875">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/125/125875_1688543-lq.mp3" title="mp3 file">Crickets and frogs in Camargue.wav - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/125/125875_1688543-lq.ogg" title="ogg file">Crickets and frogs in Camargue.wav - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/125/125875_1688543_wave_M.png" title="waveform file">Crickets and frogs in Camargue.wav - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/125/125875_1688543_spec_M.jpg" title="spectrogram file">Crickets and frogs in Camargue.wav - spectrogram</a>
+<span class="duration" title="duration in seconds">342095.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/125/125875_1688543_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-05:42</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/truflabart/sounds/125875/" title="Crickets and frogs in Camargue.wav">Crickets and frogs in Ca...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:81%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/truflabart/sounds/125875/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/truflabart/sounds/125875/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/truflabart/sounds/125875/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/truflabart/sounds/125875/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/truflabart/sounds/125875/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Recorded in the night from the hotel window (Camargue in south of France, at Rhone delta). You can hear mainly ...</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambiance/">ambiance</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/field-recording/">field-recording</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/frogs/">frogs</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/reeds/">reeds</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/waves/">waves</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/wind/">wind</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_125875" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/truflabart/">truflabart</a><br>
+        <span class="date">August 5th, 2011</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/truflabart/sounds/125875/downloaders/">5017 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/truflabart/sounds/125875/#comments">17 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(125875)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/truflabart/sounds/125875/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/truflabart/packs/7851/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: crickets">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/bync.png" height="16" alt="Creative Commons Attribution Non-Commercial license" title="This sound is licensed under the Creative Commons Attribution Non-Commercial license.">
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%227851_crickets%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">1 more result</a> in the same pack "crickets"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="216215">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/216/216215_3761494-lq.mp3" title="mp3 file">Crickets_02.wav - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/216/216215_3761494-lq.ogg" title="ogg file">Crickets_02.wav - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/216/216215_3761494_wave_M.png" title="waveform file">Crickets_02.wav - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/216/216215_3761494_spec_M.jpg" title="spectrogram file">Crickets_02.wav - spectrogram</a>
+<span class="duration" title="duration in seconds">5004.44</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="play toggle">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/216/216215_3761494_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                                  <div class="position-indicator" style="left: 101.19%;"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:00</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/RSilveira_88/sounds/216215/" title="Crickets_02.wav">Crickets_02.wav</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:0%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/RSilveira_88/sounds/216215/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/RSilveira_88/sounds/216215/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/RSilveira_88/sounds/216215/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/RSilveira_88/sounds/216215/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/RSilveira_88/sounds/216215/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Recorded using an Alesis Palmtrack</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/insects/">insects</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bugs/">bugs</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/outdoors/">outdoors</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_216215" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/RSilveira_88/">RSilveira_88</a><br>
+        <span class="date">January 28th, 2014</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/RSilveira_88/sounds/216215/downloaders/">1810 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/RSilveira_88/sounds/216215/#comments">2 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(216215)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/RSilveira_88/sounds/216215/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/RSilveira_88/packs/13698/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: Crickets">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/by.png" width="16" height="16" alt="Creative Commons Attribution license" title="This sound is licensed under the Creative Commons Attribution license.">
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%2213698_Crickets%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">4 more results</a> in the same pack "Crickets"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="376053">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/376/376053_3283195-lq.mp3" title="mp3 file">Valece, komische Grillen, zirpen.WAV - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/376/376053_3283195-lq.ogg" title="ogg file">Valece, komische Grillen, zirpen.WAV - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/376/376053_3283195_wave_M.png" title="waveform file">Valece, komische Grillen, zirpen.WAV - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/376/376053_3283195_spec_M.jpg" title="spectrogram file">Valece, komische Grillen, zirpen.WAV - spectrogram</a>
+<span class="duration" title="duration in seconds">36224.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/376/376053_3283195_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:36</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/VMan533/sounds/376053/" title="Valece, komische Grillen, zirpen.WAV">Valece, komische Grillen...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:0%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/VMan533/sounds/376053/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/VMan533/sounds/376053/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/VMan533/sounds/376053/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/VMan533/sounds/376053/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/VMan533/sounds/376053/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">some strange cricket nois near a street</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/france/">france</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/big/">big</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_376053" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/VMan533/">VMan533</a><br>
+        <span class="date">January 6th, 2017</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/VMan533/sounds/376053/downloaders/">226 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/VMan533/sounds/376053/#comments">1 comment</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(376053)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/VMan533/sounds/376053/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/VMan533/packs/21088/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: Crickets">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/by.png" width="16" height="16" alt="Creative Commons Attribution license" title="This sound is licensed under the Creative Commons Attribution license.">
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%2221088_Crickets%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">1 more result</a> in the same pack "Crickets"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="6791">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/6/6791_8262-lq.mp3" title="mp3 file">crickets_0005.aiff - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/6/6791_8262-lq.ogg" title="ogg file">crickets_0005.aiff - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/6/6791_8262_wave_M.png" title="waveform file">crickets_0005.aiff - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/6/6791_8262_spec_M.jpg" title="spectrogram file">crickets_0005.aiff - spectrogram</a>
+<span class="duration" title="duration in seconds">9917.82312925</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="play toggle">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/6/6791_8262_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                                  <div class="position-indicator" style="left: 100.667%;"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:00</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/Mbazzy/sounds/6791/" title="crickets_0005.aiff">crickets_0005.aiff</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:25%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/Mbazzy/sounds/6791/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/Mbazzy/sounds/6791/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/Mbazzy/sounds/6791/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/Mbazzy/sounds/6791/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/Mbazzy/sounds/6791/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description"><b>crickets</b> of the digital age from outerspace against a blue screen setting</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/bidule/">bidule</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crazy-ivan/">crazy-ivan</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/sci-fi/">sci-fi</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/supatrigga/">supatrigga</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_6791" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/Mbazzy/">Mbazzy</a><br>
+        <span class="date">August 11th, 2005</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/Mbazzy/sounds/6791/downloaders/">178 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/Mbazzy/sounds/6791/#comments">0 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(6791)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/Mbazzy/sounds/6791/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/Mbazzy/packs/355/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: Crickets">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+                <img class="cc_license" src="./crickets_files/sampling.png" width="16" height="16" alt="Sampling+ license" title="This sound is licensed under the sampling+ license.">
+            
+            
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%22355_Crickets%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">4 more results</a> in the same pack "Crickets"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="181684">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/181/181684_1648170-lq.mp3" title="mp3 file">crickets close 01 130322_00.flac - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/181/181684_1648170-lq.ogg" title="ogg file">crickets close 01 130322_00.flac - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/181/181684_1648170_wave_M.png" title="waveform file">crickets close 01 130322_00.flac - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/181/181684_1648170_spec_M.jpg" title="spectrogram file">crickets close 01 130322_00.flac - spectrogram</a>
+<span class="duration" title="duration in seconds">583204.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/181/181684_1648170_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-09:43</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/klankbeeld/sounds/181684/" title="crickets close 01 130322_00.flac">crickets close 01 130322...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:88%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/klankbeeld/sounds/181684/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/klankbeeld/sounds/181684/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/klankbeeld/sounds/181684/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/klankbeeld/sounds/181684/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/klankbeeld/sounds/181684/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Most of the people do not know what <b>crickets</b> really sound if you record them close. Hear the eat crawl ...</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/cricket/">cricket</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/domestica/">domestica</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/eerie/">eerie</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/insects/">insects</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/house/">house</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/horror/">horror</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/song/">song</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/krekel/">krekel</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Acheta/">Acheta</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Gryllus/">Gryllus</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/field/">field</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/campestris/">campestris</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crisp/">crisp</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/calling/">calling</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/chirping/">chirping</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_181684" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/klankbeeld/">klankbeeld</a><br>
+        <span class="date">March 23rd, 2013</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/klankbeeld/sounds/181684/downloaders/">1392 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/klankbeeld/sounds/181684/#comments">2 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(181684)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            
+            <a class="pack" href="https://freesound.org/people/klankbeeld/packs/11499/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: crickets">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/by.png" width="16" height="16" alt="Creative Commons Attribution license" title="This sound is licensed under the Creative Commons Attribution license.">
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%2211499_crickets%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">3 more results</a> in the same pack "crickets"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="402733">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/402/402733_2677090-lq.mp3" title="mp3 file">Kingston NY late summer midnight crickets - with distant train.wav - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/402/402733_2677090-lq.ogg" title="ogg file">Kingston NY late summer midnight crickets - with distant train.wav - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/402/402733_2677090_wave_M.png" title="waveform file">Kingston NY late summer midnight crickets - with distant train.wav - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/402/402733_2677090_spec_M.jpg" title="spectrogram file">Kingston NY late summer midnight crickets - with distant train.wav - spectrogram</a>
+<span class="duration" title="duration in seconds">180634.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/402/402733_2677090_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-03:00</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/samwd/sounds/402733/" title="Kingston NY late summer midnight crickets - with distant train.wav">Kingston NY late summer ...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:0%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/samwd/sounds/402733/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/samwd/sounds/402733/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/samwd/sounds/402733/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/samwd/sounds/402733/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/samwd/sounds/402733/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description"><b>crickets</b> in upstate NY forest late Sept, train in distance with haunting whistle</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/train/">train</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/whistle/">whistle</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/field-recording/">field-recording</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/summer/">summer</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_402733" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/samwd/">samwd</a><br>
+        <span class="date">September 23rd, 2017</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/samwd/sounds/402733/downloaders/">315 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/samwd/sounds/402733/#comments">1 comment</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(402733)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/samwd/sounds/402733/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/samwd/packs/22712/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: crickets and trains">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+                <img class="cc_license" src="./crickets_files/nolaw.png" width="16" height="16" alt="Public Domain license" title="This sound is public domain.">
+            
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%2222712_crickets%20and%20trains%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">1 more result</a> in the same pack "crickets and trains"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="129678">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/129/129678_2362707-lq.mp3" title="mp3 file">crickets - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/129/129678_2362707-lq.ogg" title="ogg file">crickets - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/129/129678_2362707_wave_M.png" title="waveform file">crickets - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/129/129678_2362707_spec_M.jpg" title="spectrogram file">crickets - spectrogram</a>
+<span class="duration" title="duration in seconds">15577.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="play toggle">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/129/129678_2362707_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                                  <div class="position-indicator" style="left: 100.493%;"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:00</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/FreethinkerAnon/sounds/129678/" title="crickets">crickets</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:84%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/FreethinkerAnon/sounds/129678/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/FreethinkerAnon/sounds/129678/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/FreethinkerAnon/sounds/129678/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/FreethinkerAnon/sounds/129678/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/FreethinkerAnon/sounds/129678/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Chirping <b>crickets</b>.</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/chirping/">chirping</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_129678" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/FreethinkerAnon/">FreethinkerAnon</a><br>
+        <span class="date">September 28th, 2011</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/FreethinkerAnon/sounds/129678/downloaders/">12098 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/FreethinkerAnon/sounds/129678/#comments">22 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(129678)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/FreethinkerAnon/sounds/129678/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/FreethinkerAnon/packs/8123/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: Free for all.">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+                <img class="cc_license" src="./crickets_files/nolaw.png" width="16" height="16" alt="Public Domain license" title="This sound is public domain.">
+            
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="146033">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/146/146033_719177-lq.mp3" title="mp3 file">Crickets - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/146/146033_719177-lq.ogg" title="ogg file">Crickets - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/146/146033_719177_wave_M.png" title="waveform file">Crickets - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/146/146033_719177_spec_M.jpg" title="spectrogram file">Crickets - spectrogram</a>
+<span class="duration" title="duration in seconds">12500.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/146/146033_719177_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:12</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/thedogryan420/sounds/146033/" title="Crickets">Crickets</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:85%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/thedogryan420/sounds/146033/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/thedogryan420/sounds/146033/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/thedogryan420/sounds/146033/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/thedogryan420/sounds/146033/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/thedogryan420/sounds/146033/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description"><b>crickets</b> singing in the night.</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bugs/">bugs</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_146033" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/thedogryan420/">thedogryan420</a><br>
+        <span class="date">February 11th, 2012</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/thedogryan420/sounds/146033/downloaders/">5046 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/thedogryan420/sounds/146033/#comments">11 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(146033)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            
+            
+            
+            <!-- license icons -->
+            
+            
+                <img class="cc_license" src="./crickets_files/nolaw.png" width="16" height="16" alt="Public Domain license" title="This sound is public domain.">
+            
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="337435">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/337/337435_1772601-lq.mp3" title="mp3 file">Cricket - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/337/337435_1772601-lq.ogg" title="ogg file">Cricket - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/337/337435_1772601_wave_M.png" title="waveform file">Cricket - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/337/337435_1772601_spec_M.jpg" title="spectrogram file">Cricket - spectrogram</a>
+<span class="duration" title="duration in seconds">998.231</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/337/337435_1772601_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:00</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/Ev-Dawg/sounds/337435/" title="Cricket">Cricket</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:87%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/Ev-Dawg/sounds/337435/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/Ev-Dawg/sounds/337435/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/Ev-Dawg/sounds/337435/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/Ev-Dawg/sounds/337435/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/Ev-Dawg/sounds/337435/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Cricket making noise at night.</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/cricket/">cricket</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/noise/">noise</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/darkness/">darkness</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/dark/">dark</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/chirp/">chirp</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/animal/">animal</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bug/">bug</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_337435" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/Ev-Dawg/">Ev-Dawg</a><br>
+        <span class="date">February 20th, 2016</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/Ev-Dawg/sounds/337435/downloaders/">5618 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/Ev-Dawg/sounds/337435/#comments">14 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(337435)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/Ev-Dawg/sounds/337435/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            
+            
+            <!-- license icons -->
+            
+            
+                <img class="cc_license" src="./crickets_files/nolaw.png" width="16" height="16" alt="Public Domain license" title="This sound is public domain.">
+            
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="32655">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/32/32655_189568-lq.mp3" title="mp3 file">FrogsAndCrickets_ExcerptB_JMA_24Bit_48k.wav - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/32/32655_189568-lq.ogg" title="ogg file">FrogsAndCrickets_ExcerptB_JMA_24Bit_48k.wav - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/32/32655_189568_wave_M.png" title="waveform file">FrogsAndCrickets_ExcerptB_JMA_24Bit_48k.wav - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/32/32655_189568_spec_M.jpg" title="spectrogram file">FrogsAndCrickets_ExcerptB_JMA_24Bit_48k.wav - spectrogram</a>
+<span class="duration" title="duration in seconds">81139.4166667</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/32/32655_189568_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-01:21</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/greysound/sounds/32655/" title="FrogsAndCrickets_ExcerptB_JMA_24Bit_48k.wav">FrogsAndCrickets_Excerpt...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:86%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/greysound/sounds/32655/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/greysound/sounds/32655/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/greysound/sounds/32655/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/greysound/sounds/32655/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/greysound/sounds/32655/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Frogs and <b>crickets</b> recorded by a ranch pond at 1:00 AM using a Zoom H4 at 24 bits, 48kHz. Aggressively ...</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/frogs/">frogs</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/stream/">stream</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/swamp/">swamp</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_32655" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/greysound/">greysound</a><br>
+        <span class="date">March 25th, 2007</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/greysound/sounds/32655/downloaders/">5423 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/greysound/sounds/32655/#comments">27 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(32655)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/greysound/sounds/32655/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/greysound/packs/2040/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: Frogs and Crickets">
+            </a>
+            
+            
+            
+            <a class="geotag" href="https://freesound.org/people/greysound/sounds/32655/geotag/">
+                <img src="./crickets_files/geotag.png" width="16" height="16" alt="Geotagged" title="This sound has a geotag">
+            </a>
+            
+            <!-- license icons -->
+            
+            
+                <img class="cc_license" src="./crickets_files/nolaw.png" width="16" height="16" alt="Public Domain license" title="This sound is public domain.">
+            
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./crickets_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=crickets&amp;f=grouping_pack:%222040_Frogs%20and%20Crickets%22%20&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">1 more result</a> in the same pack "Frogs and Crickets"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="172143">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/172/172143_2436579-lq.mp3" title="mp3 file">Crickets - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/172/172143_2436579-lq.ogg" title="ogg file">Crickets - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/172/172143_2436579_wave_M.png" title="waveform file">Crickets - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/172/172143_2436579_spec_M.jpg" title="spectrogram file">Crickets - spectrogram</a>
+<span class="duration" title="duration in seconds">14895.6</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/172/172143_2436579_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:14</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/frus/sounds/172143/" title="Crickets">Crickets</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:78%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/frus/sounds/172143/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/frus/sounds/172143/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/frus/sounds/172143/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/frus/sounds/172143/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/frus/sounds/172143/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">some <b>crickets</b> chirping at night with the sound of passing cars</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/animals/">animals</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/Crickets/">Crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bugs/">bugs</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_172143" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/frus/">frus</a><br>
+        <span class="date">December 20th, 2012</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/frus/sounds/172143/downloaders/">2952 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/frus/sounds/172143/#comments">4 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(172143)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/frus/sounds/172143/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/bync.png" height="16" alt="Creative Commons Attribution Non-Commercial license" title="This sound is licensed under the Creative Commons Attribution Non-Commercial license.">
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="365075">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/365/365075_5966421-lq.mp3" title="mp3 file">Crickets - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/365/365075_5966421-lq.ogg" title="ogg file">Crickets - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/365/365075_5966421_wave_M.png" title="waveform file">Crickets - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/365/365075_5966421_spec_M.jpg" title="spectrogram file">Crickets - spectrogram</a>
+<span class="duration" title="duration in seconds">10000.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/365/365075_5966421_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:10</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/justiiiiin/sounds/365075/" title="Crickets">Crickets</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:94%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/justiiiiin/sounds/365075/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/justiiiiin/sounds/365075/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/justiiiiin/sounds/365075/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/justiiiiin/sounds/365075/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/justiiiiin/sounds/365075/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Recorded with: Tascam DR-40 Recording of <b>crickets</b> at night outside. Some other ambiences. Main focus on crickets.</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/high-pitch/">high-pitch</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bug/">bug</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/insect/">insect</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/high/">high</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/pitch/">pitch</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/chip/">chip</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/insects/">insects</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/nature/">nature</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/OWI/">OWI</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/evening/">evening</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/cricket/">cricket</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_365075" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/justiiiiin/">justiiiiin</a><br>
+        <span class="date">October 26th, 2016</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/justiiiiin/sounds/365075/downloaders/">1176 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/justiiiiin/sounds/365075/#comments">1 comment</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(365075)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/justiiiiin/sounds/365075/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/bync.png" height="16" alt="Creative Commons Attribution Non-Commercial license" title="This sound is licensed under the Creative Commons Attribution Non-Commercial license.">
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="243729">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/243/243729_3754809-lq.mp3" title="mp3 file">crickets in the woods - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/243/243729_3754809-lq.ogg" title="ogg file">crickets in the woods - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/243/243729_3754809_wave_M.png" title="waveform file">crickets in the woods - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/243/243729_3754809_spec_M.jpg" title="spectrogram file">crickets in the woods - spectrogram</a>
+<span class="duration" title="duration in seconds">89806.6</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="toggle play">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/243/243729_3754809_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                 <div class="loading-progress" style="display: none;"></div>                 <div class="position-indicator"></div>                 <div class="time-indicator-container"><div class="time-indicator">-01:29</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/Overtone2/sounds/243729/" title="crickets in the woods">crickets in the woods</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:88%;">Currently /5 Stars.</li>
+    
+    <li><a href="https://freesound.org/people/Overtone2/sounds/243729/rate/1/" title="pretty bad :-(" class="one-star">1</a></li>
+    <li><a href="https://freesound.org/people/Overtone2/sounds/243729/rate/2/" title="quite good" class="two-stars">2</a></li>
+    <li><a href="https://freesound.org/people/Overtone2/sounds/243729/rate/3/" title="good :-)" class="three-stars">3</a></li>
+    <li><a href="https://freesound.org/people/Overtone2/sounds/243729/rate/4/" title="very good" class="four-stars">4</a></li>
+    <li><a href="https://freesound.org/people/Overtone2/sounds/243729/rate/5/" title="amazing :-o" class="five-stars">5</a></li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description"><b>crickets</b> in the woods</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/crickets/">crickets</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/forest/">forest</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/night/">night</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_243729" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/Overtone2/">Overtone2</a><br>
+        <span class="date">July 29th, 2014</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/Overtone2/sounds/243729/downloaders/">2623 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/Overtone2/sounds/243729/#comments">6 comments</a>
+
+        <div class="sound_attributes">
+
+            
+            <a class="bookmark" href="javascript:void(0)" onclick="show_hide_bookmark_form(243729)">
+                <img src="./crickets_files/address-book-blue.png" width="16" height="16" alt="Bookmark" title="Bookmark this sound">
+            </a>
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/Overtone2/sounds/243729/similar/">
+                <img src="./crickets_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/Overtone2/packs/15007/">
+                <img src="./crickets_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: forest sounds">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+            
+                <img class="cc_license" src="./crickets_files/bync.png" height="16" alt="Creative Commons Attribution Non-Commercial license" title="This sound is licensed under the Creative Commons Attribution Non-Commercial license.">
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+
+            <div class="search_paginator">
+                <ul class="pagination"><li class="disabled-previous-next">previous</li><li class="next-page"><a href="https://freesound.org/search/?q=crickets&amp;page=2#sound" title="Next Page">next</a></li><li class="current-page">1</li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=2#sound" title="Page 2">2</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=3#sound" title="Page 3">3</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=4#sound" title="Page 4">4</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=5#sound" title="Page 5">5</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=6#sound" title="Page 6">6</a></li><li class="other-page"><a href="https://freesound.org/search/?q=crickets&amp;page=7#sound" title="Page 7">7</a></li><li class="dots">...</li><li class="last-page"><a href="https://freesound.org/search/?q=crickets&amp;page=73#sound" title="Last Page">73</a></li><p class="number_of_results">
+            
+                &nbsp;|&nbsp; 1704 sounds
+            
+        </p></ul>
+
+
+            </div>
+        
+
+
+    
+
+
+
+</div> <!-- END of Content area -->
+
+<br class="clear">
+
+
+
+        </div>
+        </div>
+
+    <div id="footer_wrapper">
+        <div id="footer">
+            
+            <div id="footer_links">
+                <a href="https://freesound.org/help/developers/">Developers</a>
+                <a href="http://blog.freesound.org/">Blog</a>
+                <a href="https://freesound.org/help/about/">About</a>
+                
+                <a href="https://freesound.org/help/tos_web/">Terms of use</a>
+            </div>
+            <div id="footer_credits">
+                Design by <a href="http://www.pixelshell.com/">Pixelshell</a>. Code by <a href="http://www.mtg.upf.edu/">MTG (UPF)</a>. Some Rights Reserved.
+            </div>
+            </div>
+        </div>
+
+        <div id="fsmodal" class="modal"></div>
+    
+
+
+</body></html>

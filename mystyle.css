@@ -1,0 +1,85 @@
+body {
+    background-color: Lightseagreen;
+	font-family: Courier New;
+	
+}
+
+h1   { 
+       color: Aqua; 
+  font-family: Courier New;
+  font-size: 40px ;
+}
+
+h2   { 
+       color: Tomato; 
+       font-family: Courier New;
+       font-size: 50px
+}
+
+h3 {
+	  color: Lawngreen ;
+	  font-family: Courier New;
+	  font-size: 20px
+	
+}
+
+	
+
+p {
+     color: brown; 
+     font-family: Courier New;
+     font-size: 20px;
+	
+}
+
+
+
+
+td {
+width: 40%
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:MediumSeaGreen ;
+text-align: center;
+margin:0 auto;
+}
+
+li a {
+    float: left;
+    display: block;
+    color:	#808080;
+    padding: 14px 16px;
+    text-decoration: none;
+text-align: center;
+}
+
+li a.Home {
+    background-color: 	#7CFC00;
+    color: #32CD32 ;
+text-align: center;
+}
+
+li a:hover:not(.active) {
+    background-color: 	#7CFC00;
+    color: Black;
+text-align: center;
+}
+
+
+
+
+p.tilly { 
+	color: pink ;
+	font-size: 20px ;
+}
+
+p.pangolin {
+	color: maroon ;
+	font-size: 20px ;
+	
+	
